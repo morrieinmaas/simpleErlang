@@ -14,6 +14,6 @@ run() ->
 
 	loop() ->
 		SensorF ! {self(), {convert, c}}, % c, T1},
-		SensorC ! {self(), {convert, f}},%,f, T2},
+		SensorC ! {self(), {convert, f}}, % f, T2},
 		timer:sleep(950),
 		loop().
